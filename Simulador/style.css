@@ -81,7 +81,7 @@ ul{
 }
 .divisaoAV{
   display: grid;
-  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-columns: 1fr 9fr 1fr;
   margin: 20px;
 }
 .conteudoNomeAV{
@@ -305,8 +305,6 @@ display: none;
 }
 .conteudoBotao:hover{
   transition: 0.9s;
-  transform: rotateX(360deg);
-
 }
 .conteudoBotaoFechar{
   display: grid;
@@ -326,7 +324,6 @@ display: none;
 
 }
 #botaoInfoFechar:hover{
-  font-size: 55px;
   transform: rotate(-540deg);
   transition: 0.9s;
 
@@ -399,7 +396,7 @@ th,td{
 
 .RegrasAprovacao3AVS{
   padding-top: 20px;
-  color: #004F9F;
+  color: #ED2830;
   font-weight: 600;
 }
 .RegrasAprovacao3AVS p{

@@ -2,6 +2,10 @@
 
 /*--Eventos que acontecem na pagina--*/
 function calcularParte1(){
+
+    document.querySelector('#divisaoMediaFinal2').style.display = "none";
+    document.querySelector('#divisaoMediaFinal2Situacao').style.display = "none";
+
     /*--Chamar notas das AP's colocadas pelo aluno--*/
     var atividade1 = parseFloat(document.getElementById('atividade1').value.replace(",",".").replace("","0"));
     var atividade2 = parseFloat(document.getElementById('atividade2').value.replace(",",".").replace("","0"));
@@ -44,6 +48,10 @@ function calcularParte1(){
 }
 
 function calcularParte2(){
+
+    document.querySelector('#divisaoMediaFinal2').style.display = "none";
+    document.querySelector('#divisaoMediaFinal2Situacao').style.display = "none";
+
     /*--Chamar notas das AP's colocadas pelo aluno--*/
     var atividade4 = parseFloat(document.getElementById('atividade4').value.replace(",",".").replace("","0"));
     var atividade5 = parseFloat(document.getElementById('atividade5').value.replace(",",".").replace("","0"));
@@ -106,6 +114,10 @@ function calcularParte2(){
 
 
 function calcularMediaFinal1(){
+
+    document.querySelector('#divisaoMediaFinal2').style.display = "none";
+    document.querySelector('#divisaoMediaFinal2Situacao').style.display = "none";
+
     /*--Chamar notas das AV's colocadas pelo aluno ou importadas automaticas no evento anterior--*/
     var Parte1 = parseFloat(document.getElementById('Parte1').value.replace(",",".").replace("","0"));
     var Parte2 = parseFloat(document.getElementById('Parte2').value.replace(",",".").replace("","0"));
@@ -127,12 +139,12 @@ function calcularMediaFinal1(){
         document.getElementById('situacaoMediaFinal1').style.color = "#55cb50";
     }
     else if (resultadoDecimal <= 69.99 && resultadoDecimal >= 40) {
-        document.getElementById('situacaoMediaFinal1').value = ("Alcançar no Exame Final (" + (100 - resultadoDecimal) + ")").replace(".",",");;
+        document.getElementById('situacaoMediaFinal1').value = ("Alcançar no Exame Final (" + (120 - resultadoDecimal) + ")").replace(".",",");;
         document.querySelector('#divisaoMediaFinal2').style.display = "grid";
         document.querySelector('#divisaoMediaFinal2Situacao').style.display = "grid";
         document.getElementById('situacaoMediaFinal1').style.color = "#c2a202";
     }
-    else {
+    else{
         document.getElementById('situacaoMediaFinal1').value = "Reprovado";
         document.getElementById('situacaoMediaFinal1').style.color = "#c52010";
     }
@@ -148,7 +160,7 @@ function calcularMediaFinal2(){
     var atividade8 = parseFloat(document.getElementById('atividade8').value.replace(",",".").replace("","0"));
 
 
-    var soma = mediaFinal1 + atividade8;
+    var soma = (mediaFinal1 + atividade8)/2;
     var somaDecimal = Math.trunc(soma * 100) / 100;
 
     document.getElementById('resultadoMediaFinal2').value = somaDecimal.toFixed(2).toString().replace(".", ",");

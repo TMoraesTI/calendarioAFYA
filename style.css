@@ -48,7 +48,7 @@ ul{
   background: #D31C5B;
 }
 #linkMenuCalendario{
-  background: #004F9F;
+  background: #231F20;
 }
 .linkMenu{
   margin: auto 20px;
@@ -108,7 +108,7 @@ ul{
 }
 .evento{
   display: grid;
-  grid-template-columns: 40px 1fr 90px;
+  grid-template-columns: 40px auto;
   list-style: none;
   text-align: center;
   padding: 6px 5px;
@@ -123,7 +123,7 @@ ul{
   font-size: 18px;
 }
 #dia{
-  color: #D31C5B;
+  color: #ED2830;
   font-weight: bolder;
   text-align: center;
   margin-top: auto;
