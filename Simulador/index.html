@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <!-- <link rel="icon" href="https://unigranrio.blackboard.com/bbcswebdav/institution/nead_wd/templates/2020/v3.7/favicon.ico"type="image/x-icon"> -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <title>AFYA | Simulador</title>
+  <title>Disciplinas Online | Simulador</title>
 </head>
 
 <body>
@@ -30,7 +30,7 @@
         <h3 class="conteudoNomeAV" id="conteudoNomeParte1"><span class="nomeAV" id="nomeParte1">N1</span></h3>
       </div>
       <div class="conteudoAV" id="conteudoParte1">
-        <label class="nomeAP" for="atividade1">Exercícios: <input class="notaAP" id="atividade1" name="atividade1" type="text" value="1" title="Vale até 10 pontos" autofocus/></label>
+        <label class="nomeAP" for="atividade1">Exercícios: <input class="notaAP" id="atividade1" name="atividade1" type="text" value="" title="Vale até 10 pontos" autofocus/></label>
         <label class="nomeAP" for="atividade2">Fórum: <input class="notaAP" id="atividade2" name="atividade2" type="text" value="" title="Vale até 10 pontos"/></label>
         <label class="nomeAP" for="atividade3">Atividade Disserativa: <input class="notaAP" id="atividade3" name="atividade3" type="text" value="" title="Vale até 20 pontos"/></label>
 
@@ -49,10 +49,10 @@
         <h3 class="conteudoNomeAV" id="conteudoNomeParte2"><span class="nomeAV" id="nomeParte2">N2</span></h3>
       </div>
       <div class="conteudoAV" id="conteudoParte2">
-        <label class="nomeAP" for="atividade4">Exercícios: <input class="notaAP" id="atividade4" name="atividade4" type="text" value="" title="Vale até 20 pontos"/></label>
-        <label class="nomeAP" for="atividade5">Fórum: <input class="notaAP" id="atividade5" name="atividade5" type="text" value="" title="Vale até 20 pontos"/></label>
-        <label class="nomeAP" for="atividade6">Simulado: <input class="notaAP" id="atividade6" name="atividade6" type="text" value="" title="Vale até 20 pontos"/></label>
-        <label class="nomeAP" for="atividade7">Avaliação Final: <input class="notaAP" id="atividade7" name="atividade7" type="text" value="" title="Vale até 20 pontos"/></label>
+        <label class="nomeAP" for="atividade4">Exercícios: <input class="notaAP" id="atividade4" name="atividade4" type="text" value="" title="Vale até 10 pontos"/></label>
+        <label class="nomeAP" for="atividade5">Fórum: <input class="notaAP" id="atividade5" name="atividade5" type="text" value="" title="Vale até 10 pontos"/></label>
+        <label class="nomeAP" for="atividade6">Simulado: <input class="notaAP" id="atividade6" name="atividade6" type="text" value="" title="Vale até 10 pontos"/></label>
+        <label class="nomeAP" for="atividade7">Avaliação Final: <input class="notaAP" id="atividade7" name="atividade7" type="text" value="" title="Vale até 30 pontos"/></label>
 
         <input class="btCalcular" id="btCalcularSimulador" type="button" onclick="calcularParte2()" value="Calcular" />
       </div>
@@ -68,60 +68,49 @@
         <h3 class="conteudoNomeAV" id="conteudoNomeMediaFinal1"><span class="nomeAV" id="nomeMediaFinal1">Média Final</span></h3>
       </div>
       <div class="conteudoAV" id="conteudoMediaFinal1">
-        <label class="nomeAP" for="Parte1" id="nomeParte1">N1: <input class="notaAP" id="Parte1" name="Parte1" type="text"
-            value="" title="Vale até 10 pontos"/></label>
-        <label class="nomeAP" for="Parte2" id="nomeParte2">N2: <input class="notaAP" id="Parte2" name="Parte2" type="text"
-            value="" title="Vale até 10 pontos"/></label>
+        <label class="nomeAP" for="Parte1" id="nomeParte1">N1: <input class="notaAP" id="Parte1" name="Parte1" type="text" value="" title="Vale até 10 pontos"/></label>
+        <label class="nomeAP" for="Parte2" id="nomeParte2">N2: <input class="notaAP" id="Parte2" name="Parte2" type="text" value="" title="Vale até 10 pontos"/></label>
 
-        <input class="btCalcular" id="btCalcularSimulador" type="button" onclick="calcularMediaFinal1()"
-          value="Calcular" />
+        <input class="btCalcular" id="btCalcularSimulador" type="button" onclick="calcularMediaFinal1()" value="Calcular" />
       </div>
       <div class="conteudoMediaAV" id="conteudoMediaFinal1">
-        <label class="conteudoNomeAP" id="conteudoResultadoMediaFinal1"><span class="nomeAP"
-            id="resultadoNomeMediaFinal1">Média Final: <input class="notaAP" id="resultadoMediaFinal1"
-              name="resultadoMediaFinal1" type="text" value="" readonly="readonly" /></span></label>
+        <label class="conteudoNomeAP" id="conteudoResultadoMediaFinal1"><span class="nomeAP" id="resultadoNomeMediaFinal1">Média Final: <input class="notaAP" id="resultadoMediaFinal1" name="resultadoMediaFinal1" type="text" value="" readonly="readonly" /></span></label>
       </div>
     </div>
 
     <div class="divisaoAV" id="divisaoMediaFinal1Situacao">
       <div class="conteudoNomeAV">
-        <h3 class="conteudoNomeAV" id="conteudoNomeMediaFinal1Situacao"><span class="nomeAV"
-            id="nomeMediaFinal1Situacao">Situação</span></h3>
+        <h3 class="conteudoNomeAV" id="conteudoNomeMediaFinal1Situacao"><span class="nomeAV" id="nomeMediaFinal1Situacao">Situação</span></h3>
       </div>
       <div class="conteudoAV" id="conteudoMediaFinal1Situacao">
-        <label class="situacao" for="situacaoMediaFinal1"><input class="nomeSituacao" id="situacaoMediaFinal1" type="text"
-            value="" readonly="readonly" /></label>
+        <label class="situacao" for="situacaoMediaFinal1"><input class="nomeSituacao" id="situacaoMediaFinal1" type="text" value="" readonly="readonly" /></label>
       </div>
     </div>
-    </div>
+    </div>    
 
-    <div class="divisaoAV" id="divisaoAVS">
-      <div class="conteudoNomeAV" id="nomeAVSimulador">
-        <h3 class="conteudoNomeAV" id="conteudoNomeAVS"><span class="nomeAV" id="nomeAVS">Exame Final</span></h3>
-      </div>
-      <div class="conteudoAV" id="conteudoAVS">
-        <label class="nomeAP" for="mediaFinal1">Média Final: <input class="notaAP" id="mediaFinal1" name="mediaFinal1"
-            type="text" value="" /></label>
-        <label class="nomeAP" for="AVS">Exame Final: <input class="notaAP" id="AVS" name="AVS" type="text" value="" /></label>
-
-        <input class="btCalcular" id="btCalcularSimulador" type="button" onclick="calcularAVS()" value="Calcular" />
-      </div>
-      <div class="conteudoMediaAV" id="conteudoAVS">
-        <label class="conteudoNomeAP" id="conteudoResultadoAVS"><span class="nomeAP" id="resultadoNomeAVS">Média Exame Final:
-            <input class="notaAP" id="resultadoAVS" name="resultadoAVS" type="text" value=""
-              readonly="readonly" /></span></label>
-      </div>
-    </div>
-
-    <div class="divisaoAV" id="divisaoAVSSituacao">
+    <div class="divisaoAV" id="divisaoMediaFinal2">
       <div class="conteudoNomeAV">
-        <h3 class="conteudoNomeAV" id="conteudoNomeAVSSituacao"><span class="nomeAV"
-            id="nomeAVSSituacao">Situação</span></h3>
+        <h3 class="conteudoNomeAV" id="conteudoNomeMediaFinal2"><span class="nomeAV" id="nomeMediaFinal2">Exame Final</span></h3>
       </div>
-      <div class="conteudoAV" id="conteudoAVSSituacao">
-        <label class="situacao" for="situacaoAVS"></label><input class="nomeSituacao" id="situacaoAVS" type="text"
-          value="" readonly="readonly" /></label>
+      <div class="conteudoAV" id="conteudoMediaFinal2">
+        <label class="nomeAP" for="mediaFinal1" id="nomemediaFinal1">Média Final: <input class="notaAP" id="mediaFinal1" name="mediaFinal1" type="text" value=""/></label>
+        <label class="nomeAP" for="atividade8" id="nomeatividade8">Exame Final: <input class="notaAP" id="atividade8" name="atividade8" type="text" value="" title="Vale até 10 pontos"/></label>
+
+        <input class="btCalcular" id="btCalcularSimulador" type="button" onclick="calcularMediaFinal2()" value="Calcular" />
       </div>
+      <div class="conteudoMediaAV" id="conteudoMediaFinal2">
+        <label class="conteudoNomeAP" id="conteudoResultadoMediaFinal2"><span class="nomeAP" id="resultadoNomeMediaFinal2">Média Exame Final: <input class="notaAP" id="resultadoMediaFinal2" name="resultadoMediaFinal2" type="text" value="" readonly="readonly" /></span></label>
+      </div>
+    </div>
+
+    <div class="divisaoAV" id="divisaoMediaFinal2Situacao">
+      <div class="conteudoNomeAV">
+        <h3 class="conteudoNomeAV" id="conteudoNomeMediaFinal2Situacao"><span class="nomeAV" id="nomeMediaFinal2Situacao">Situação</span></h3>
+      </div>
+      <div class="conteudoAV" id="conteudoMediaFinal2Situacao">
+        <label class="situacao" for="situacaoMediaFinal2"><input class="nomeSituacao" id="situacaoMediaFinal2" type="text" value="" readonly="readonly" /></label>
+      </div>
+    </div>
     </div>
     <br />
     <hr />
